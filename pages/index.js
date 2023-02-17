@@ -1,11 +1,5 @@
 import Product from "@/components/Product";
-
-const products = [
-  { id: 1, name: "Watermelon", price: "£1.00", emoji: "🍉" },
-  { id: 2, name: "Apple", price: "£0.20", emoji: "🍎" },
-  { id: 3, name: "Pineapple", price: "£1.05", emoji: "🍍" },
-  { id: 4, name: "Banana", price: "£0.20", emoji: "🍌" },
-];
+import { products } from "@/data/products";
 
 export default function Home() {
   return (
