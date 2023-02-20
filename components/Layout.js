@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Basic Next.js ecommerce</title>
+        <title>fresh</title>
         <meta
           name="description"
           content="A simple website to show how to use use-shopping-cart"
