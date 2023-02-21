@@ -1,4 +1,5 @@
 import CartItem from "./CartItem";
+import CheckoutButton from "./CheckoutButton";
 
 const items = [];
 
@@ -10,9 +11,7 @@ export default function ShoppingCart() {
           {items.map((item) => (
             <CartItem item={item} key={item.id} />
           ))}
-          <button className="bg-emerald-50 mt-3 hover:bg-emerald-500 hover:text-white transition-colors duration-500 text-emerald-500 py-3 px-5 rounded-md w-100">
-            Proceed to checkout
-          </button>
+          <CheckoutButton />
         </>
       ) : (
         <div className="p-5">You have no items in your cart</div>
