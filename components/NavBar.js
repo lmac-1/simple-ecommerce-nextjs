@@ -1,12 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import ShoppingCart from "./ShoppingCart";
 
 export default function NavBar() {
   return (
     <nav className="py-5 px-12 flex justify-between">
-      <p className="bg-white text-3xl font-bold underline underline-offset-4 decoration-wavy decoration-2 decoration-emerald-500">
-        fresh
-      </p>
+      <Link href="/">
+        <p className="bg-white text-3xl font-bold underline underline-offset-4 decoration-wavy decoration-2 decoration-emerald-500">
+          fresh
+        </p>
+      </Link>
       <button className="relative">
         <Image
           src="./cart.svg"
