@@ -15,7 +15,7 @@ export default function NavBar() {
           alt="shopping cart icon"
         />
         <div className="rounded-full flex justify-center items-center bg-emerald-500 text-xs text-white absolute w-6 h-5 bottom-6 -right-1">
-          4
+          0
         </div>
       </button>
       <ShoppingCart />
