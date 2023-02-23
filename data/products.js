@@ -1,29 +1,35 @@
+/* Note: these are product IDs that are in my Stripe dashboard, 
+  you'll need to replace them with products you create on your own dashboard  */
 export const products = [
   {
-    id: 1,
+    id: "price_1McB1XC4V4bOyW0mEbCcuNPe",
     name: "Watermelon",
-    price: "£1.00",
+    /* Prices are in smallest currency unit, 100 pence = £1 */
+    price: 100,
     emoji: "🍉",
     currency: "GBP",
   },
   {
-    id: 2,
+    id: "price_1McBPVC4V4bOyW0mqtp8qNLn",
     name: "Apple",
-    price: "£0.20",
+    /* Prices are in smallest currency unit, 20 pence = £0.20 */
+    price: 20,
     emoji: "🍎",
     currency: "GBP",
   },
   {
-    id: 3,
+    id: "price_1McBQBC4V4bOyW0m4sCYXwDz",
     name: "Pineapple",
-    price: "£1.05",
+    /* Prices are in smallest currency unit, 105 pence = £1.05 */
+    price: 105,
     emoji: "🍍",
     currency: "GBP",
   },
   {
-    id: 4,
+    id: "price_1McBQkC4V4bOyW0mk4NGp6bY",
     name: "Banana",
-    price: "£0.20",
+    /* Prices are in smallest currency unit, 20 pence = £0.20 */
+    price: 20,
     emoji: "🍌",
     currency: "GBP",
   },
