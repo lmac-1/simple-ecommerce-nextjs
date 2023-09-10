@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import ShoppingCart from "./ShoppingCart";
+import { useShoppingCart } from "use-shopping-cart";
 
 export default function NavBar() {
+  const { handleCartClick, cartCount } = useShoppingCart();
   return (
     <nav className="py-5 px-12 flex justify-between">
       <Link href="/">
@@ -10,7 +12,7 @@ export default function NavBar() {
           fresh
         </p>
       </Link>
-      <button className="relative">
+      <button className="relative" onClick={() => handleCartClick()}>
         <Image
           src="./cart.svg"
           width={40}
@@ -18,9 +20,10 @@ export default function NavBar() {
           alt="shopping cart icon"
         />
         <div className="rounded-full flex justify-center items-center bg-emerald-500 text-xs text-white absolute w-6 h-5 bottom-6 -right-1">
-          0
+          {cartCount}
         </div>
       </button>
+
       <ShoppingCart />
     </nav>
   );

@@ -12,7 +12,8 @@
     "@next/font": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "use-shopping-cart": "^3.1.8"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
